@@ -13,7 +13,6 @@ class EmailParser
 
   def parse
     split_emails = @@emails.split(", ") || @@emails.split(" ")
-  binding pry
   end
   
 end
