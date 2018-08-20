@@ -16,6 +16,9 @@ class EmailParser
     split_emails = @@emails.gsub(" ",",").split(",")
     split_emails.delete("")
     split_emails.uniq
+    # emails.split.map do |email|
+    # email.split(',')
+    # end.flatten.uniq
   end
   
 end
