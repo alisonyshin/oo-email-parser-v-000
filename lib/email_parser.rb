@@ -12,7 +12,9 @@ class EmailParser
   end
 
   def parse
-    split_emails = @@emails.gsub(" ",",").split(",").delete
+    split_emails = @@emails.gsub(" ",",").split(",")
+    split_emails.delete("")
+    split_emails
   end
   
 end
